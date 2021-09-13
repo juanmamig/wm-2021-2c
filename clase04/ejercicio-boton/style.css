@@ -1,6 +1,6 @@
 /* Estilos genéricos / Similitudes (reutilizables) */
 .button {
-  display: inline-block;
+  display: inline-block; /* Mix entre bloque y linea. Le da bola a los márgenes si es una etiqueta de línea */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding: 15px 35px;
