@@ -1,0 +1,38 @@
+/* Selector univeral */
+*{
+  border: 1px solid black;
+}
+
+/* El h1 heredó los estilos que le dimos al body */ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+/* Busca TODAS las etiquetas <h1> y les va a dar un color rojo. */
+h1{
+  color: red;
+  text-align: center;
+}
+
+/* El <a> es una etiqueta importante que tiene sus estilos y no hereda, por ejemplo, el color de sus parents. */
+a {
+  color: green;
+  /* No se puede alinear el texto de una etiqueta de línea */
+  /* text-align: center; */
+}
+
+p {
+  font-size: 22px;
+}
+
+/* El . lo que hace es buscar en el html la clase que se llame text-small */
+.text-small {
+  font-size: 18px;
+}
+
+/* Las clases se puden reutilizar */
+
+#main-paragraph{
+  background-color: yellow;
+}
