@@ -1,0 +1,24 @@
+/* Estilos genéricos / Similitudes (reutilizables) */
+.button {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 15px 35px;
+  margin: 50px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 1px 2px 2px 2px rgb(201, 201, 201);
+}
+
+/* Estilos individuales */
+.bg-blue {
+  background-color: #2297EC;
+}
+
+.bg-violet{
+  background-color: #9043F1;
+}
+
+.bg-yellow{
+  background-color: #EA9D2B;  
+}
