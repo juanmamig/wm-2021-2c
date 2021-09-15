@@ -7,6 +7,10 @@
   margin: 50px 20px;
   border-radius: 30px;
   text-decoration: none;
+}
+
+/* Cuando el mouse está por arriba del botón, aplicale el conjunto de propiedades */
+.button:hover {
   box-shadow: 1px 2px 2px 2px rgb(201, 201, 201);
 }
 
