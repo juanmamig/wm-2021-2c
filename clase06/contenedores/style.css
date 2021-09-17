@@ -1,0 +1,30 @@
+body {
+  /* Resetea el margen que viene por defecto en el body */
+  margin: 0;
+}
+
+.container {
+  /* border: 3px solid orange; */
+
+  /* El width hace que la etiqueta mida SIEMPRE eso (ya sea en mobile o en desktop) */
+  /* width: 768px; */
+
+  /* El max-width hace que la etiqueta mida COMO MÁXIMO 768px, pero el mínimo se va a adaptar. */
+  max-width: 768px;
+
+  /* Para centrar a una etiqutea de bloque CON UN ANCHO LIMITADO, usamos dos propiedades:
+  - margin-left: auto;
+  - margin-right: auto; */
+
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  /* Atajo para centrar etiquetas de blouqe con ancho limitado. */
+  margin: 0 auto;
+
+}
+
+.banner {
+  background-color: rebeccapurple;
+  padding: 60px 0;
+}

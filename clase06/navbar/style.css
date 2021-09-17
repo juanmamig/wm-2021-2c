@@ -1,0 +1,30 @@
+div {
+  border: 2px solid red;
+}
+body {
+  margin: 0;
+}
+nav {
+  background-color: royalblue;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav-ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-ul li a{
+  display: inline-block;
+  border: 1px solid purple;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
