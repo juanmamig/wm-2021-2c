@@ -26,5 +26,6 @@ nav {
   border: 1px solid purple;
   color: white;
   text-decoration: none;
-  margin: 20px;
+  /* margin: 20px; */
+  padding: 10px;
 }
