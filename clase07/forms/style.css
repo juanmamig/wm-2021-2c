@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+}
+
+div {
+  /* border: 1px solid black; */
+}
+
+.contact-form {
+  /* max-width: 480px; */
+  max-width: fit-content;
+  /* Generamos compatibilidad con firefox */
+  max-width: -moz-fit-content;
+  margin: 0 auto;
+  background-color: rgb(191, 213, 247);
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+/* Con la , podemos agregar múltiples elementos */
+.form-group input, .form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+}

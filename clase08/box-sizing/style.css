@@ -1,0 +1,20 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+  border: 10px solid black;
+  padding: 10px;
+}
+
+/* Esta propiedad viene por defecto y el borde y el padding se suman al total de la caja.
+
+En este caso va a medir 240x240
+10px (border) + 10px (padding) + 200 (width) + 10px (padding) + 10px(border) */
+.content {
+  box-sizing: content-box;
+}
+
+/* En este caso la caja va a medir 200x200 porque tiene en cuenta en la medida total, al borde y al padding. */
+.border {
+  box-sizing: border-box;
+}

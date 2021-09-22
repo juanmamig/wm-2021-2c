@@ -9,40 +9,66 @@
 </head>
 <body>
 
-  <form action="">
-    <!-- El label indica para qué sirve el campo de texto a continuación -->
-    <label for="username">Ingrese su nombre de usuario</label>
-    <!-- El input es la cajita en donde el usuario ingresa sus datos -->
-    <input type="text" id="username" name="username" required>
+  <form class="contact-form" action="https://formspree.io/f/xayavpja" method="POST">
+
+    <div class="form-group">
+      <!-- El label indica para qué sirve el campo de texto a continuación -->
+      <label for="username">Ingrese su nombre de usuario</label>
+      <!-- El input es la cajita en donde el usuario ingresa sus datos -->
+      <input type="text" id="username" name="username" required>
+    </div>
 
     <!-- Una de las formas de asociar el label con el input, es a través del for y id. -->
 
-    <label>
-      Ingrese su contraseña
-      <input type="password" name="pass" required>
-    </label>
+    <div class="form-group">
+      <label>
+        Ingrese su contraseña
+        <input type="password" name="pass" required>
+      </label>
+    </div>
 
-    <label>
-      Ingrese su teléfono
-      <input type="tel" name="phone" required>
-    </label>
+    <div class="form-group">
+      <label>
+        Ingrese su teléfono
+        <input type="tel" name="phone" required>
+      </label>
+    </div>
 
-    <label>
-      Ingrese su edad
-      <input type="number" placeholder="Ingrese su edad"
-      name="age" required>
-    </label>
+    <div class="form-group">
+      <label>
+        Ingrese su edad
+        <input type="number" placeholder="Ingrese su edad"
+        name="age" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label>
+        Ingrese su mail
+        <input type="email" placeholder="Dirección de email" name="email" required>
+      </label>
+    </div>
 
-    <label>
-      Ingrese su mail
-      <input type="email" placeholder="Dirección de email" name="email" required>
-    </label>
+    <div class="form-group">
+      <textarea name="comment"></textarea>
+    </div>
 
-    <textarea name="comment"></textarea>
+    <div class="form-group">
+      <label>
+        Seleccione una provincia
+        <select name="provincia">
+          <!-- Los values sin espacios, mayúsculas, ni tildes -->
+          <option value="buenos-aires">Buenos Aires</option>
+          <option value="mendoza">Mendoza</option>
+          <option value="cordoba">Córdoba</option>
+        </select>
+      </label>
+    </div>
 
-    <input type="submit" value="Enviar">
+    <div class="form-group">
+      <input type="submit" value="Enviar">
+    </div>
 
   </form>
-  
 </body>
 </html>
