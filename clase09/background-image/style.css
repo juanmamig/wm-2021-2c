@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+} 
+
+header {
+  height: 500px; /* Alto */
+  border: 1px solid red;
+  background-image: url('img/bg.svg');
+  /* contain: La prioridad es que la imagen se muestre en su totalidad */
+  /* background-size: contain; */
+/* 
+  cover: La prioridad es que se expanda y ocupe todo el div o etiqueta. */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background-position: 20px 20px; */
+  background-position: center;
+}

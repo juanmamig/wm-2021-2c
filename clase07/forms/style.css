@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-div {
-  /* border: 1px solid black; */
-}
-
 .contact-form {
   /* max-width: 480px; */
   max-width: fit-content;
@@ -28,4 +24,9 @@ div {
   width: 100%;
   padding: 5px;
   font-size: 18px;
+}
+
+input[type="checkbox"] {
+  width: initial;
+  display: inline;
 }
