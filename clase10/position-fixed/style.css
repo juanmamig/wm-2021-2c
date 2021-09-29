@@ -33,6 +33,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%; /* Devolvemos el 100% del width */
   background-color: white;
   padding: 8px 0;
@@ -106,4 +107,16 @@ iframe {
   height: 450px;
   margin: 0 auto;
   border: 10px solid white;
+
+  /* Position relative sirve para mover a un elemento en relación a sí mismo dejando su lugar reservado */
+  /* position: relative;
+  top: -50px; */
+
+  /* Podemos utilizar márgenes negativos o position relative. Cada opción es distinta y depende del caso particular. */
+  margin-top: -50px;
+  margin-bottom: -50px;
+
+  position: relative;
+  /* El z-index nos permite determinar la capa en la que se va a manejar un elemento. Se utiliza en conjunto con algún position. */
+  z-index: 1;
 }
