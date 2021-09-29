@@ -1,0 +1,79 @@
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+}
+
+/* Utils */
+.container {
+  margin: 0 auto;
+}
+
+/* El container que tiene a su vez la clase xs */
+.container.xs {
+  max-width: 70px;
+} 
+
+.container.md {
+  max-width: 768px;
+}
+
+/* Main Nav */
+.main-nav {
+  /* Cuando le dimos position fixed a la barra, esta salió del flujo por defecto y perdió su ancho. Por eso tenemos que devolver el width del 100% */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Devolvemos el 100% del width */
+  background-color: white;
+  padding: 8px 0;
+}
+
+.main-nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 10px;
+  color: #09d892;
+  text-decoration: none;
+}
+
+.main-nav a:hover{
+  color: white;
+  background-color: darkolivegreen;
+}
+
+/*Call to Action (Suele ser el botón más importante que termina generando una conversión)*/
+.main-nav .cta {
+  background-color: #09d892;
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+
+p {
+  color: white;
+}
+
+.whatsapp{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  /* border: 1px solid white; */
+}
+/* .whatsapp img{
+  width: 60px;
+} */
+.whatsapp img{
+  max-width: 100%;
+}
