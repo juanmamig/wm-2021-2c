@@ -22,7 +22,8 @@ body {
   position: absolute;
   /* Los valores que puede recibir un elemento con position son top, bottom, left y right. */
   bottom: 0;
-  left: 0;
+  left: 50%;
+  right: 50%;
   width: 100px;
   height: 100px;
   background-color: purple;
