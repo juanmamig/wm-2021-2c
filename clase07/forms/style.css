@@ -26,9 +26,10 @@
   font-size: 18px;
 }
 
-input[type="checkbox"] {
-  width: initial;
+/* Para estilar solo los input de tipo checkbox */
+input[type="checkbox"], input[type="radio"] {
   display: inline;
+  width: auto;
 }
 
 textarea {

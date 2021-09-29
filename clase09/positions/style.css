@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent1{
+  padding: 50px;
+  border: 10px solid red;
+  position: relative;
+}
+
+.parent2 {
+  width: 600px;
+  height: 400px;
+  border: 10px solid black;
+}
+
+.child {
+  position: absolute;
+  /* Los valores que puede recibir un elemento con position son top, bottom, left y right. */
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}

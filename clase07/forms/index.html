@@ -63,12 +63,39 @@
           <option value="cordoba">Córdoba</option>
         </select>
       </label>
-    </div>  
+    </div>
+
+    <div class="form-group">
+      Seleccione su medio de transporte
+      <label>
+        <input type="checkbox" name="transporte" value="bicicleta">
+        Bicicleta
+      </label>
+
+      <label>
+        <input type="checkbox" name="transporte" value="auto">
+        Auto
+      </label>
+    </div>
+
+    <!-- Para que se seleccione solo un radio de muchos, es FUNDAMENTAL que el name sea igual entre todos los inputs. -->
+    <div class="form-group">
+      Seleccione medio de pago
+      <label>
+        <input type="radio" name="medio-de-pago" value="efectivo">
+        Efectivo
+      </label>
+
+      <label>
+        <input type="radio" name="medio-de-pago" value="tarjeta">
+        Tarjeta
+      </label>
+    </div>
 
     <div class="form-group">
       <input type="submit" value="Enviar">
     </div>
-
+    
   </form>
 </body>
 </html>
