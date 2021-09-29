@@ -22,6 +22,11 @@ body {
   max-width: 768px;
 }
 
+.center {
+  text-align: center;
+}
+
+
 /* Main Nav */
 .main-nav {
   /* Cuando le dimos position fixed a la barra, esta salió del flujo por defecto y perdió su ancho. Por eso tenemos que devolver el width del 100% */
@@ -76,4 +81,29 @@ p {
 } */
 .whatsapp img{
   max-width: 100%;
+}
+
+.gallery {
+  display: flex;
+}
+
+.pic {
+  padding: 10px;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+/* El iframe es una etiqueta de línea, para centrarla puedo
+1. Convertirla en bloque
+2. Limitarle el ancho
+3. Centrarla con margin: 0 auto; */
+
+iframe {
+  display: block;
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  border: 10px solid white;
 }
