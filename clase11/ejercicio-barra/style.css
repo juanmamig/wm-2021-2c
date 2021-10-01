@@ -1,0 +1,40 @@
+/* .fondo{
+    width: 800px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 15px;
+    overflow-x: hidden;
+}
+
+.fondo:hover .barra{
+    transform: scaleX(1);
+    transition: transform 2s linear;
+}
+
+.barra{
+    background-color: red;
+    height: 20px;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+} */
+
+.fondo{
+    width: 800px;
+    height: 20px;
+    border-radius: 30px ;
+    background-color: gray;
+    overflow-x: hidden;
+
+}
+
+.barra{
+    width: 0;
+    height: 20px;
+   /* border-radius: 30px;*/
+    background-color: red;
+    transition: width 5s linear ;
+}
+
+.fondo:hover .barra{
+    width: 100%;
+}

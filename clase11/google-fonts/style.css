@@ -1,0 +1,14 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+/* 1. No conviene usar más de dos familias tipográficas.
+  - Una se utiliza para títulos
+  - Otra se utiliza para el cuerpo
+
+
+2. Google Fonts nos da una herramienta para saber con qué tipografías matchea bien la que hemos seleccionado. */

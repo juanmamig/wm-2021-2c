@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  /* El cambio que genera el transform es muy brusco, por lo cuál vamos a agregarle una transition para lograr que este cambio sea progresivo. */
+  transition: transform 5s ease;
+  /* El transition acepta 3 valores:
+    1. La propiedad que altera a mi elemento
+    2. La cantidad de tiempo en transicionar
+    3. La aceleración */
+}
+
+.scale:hover {
+  transform: scale(2);
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* Donde seteamos el punto de transformación */
+  /* transform-origin: top left; */
+  /* transform-origin: top right; */
+  /* transform-origin: bottom left; */
+  /* transform-origin: bottom right; */
+  transform-origin: center;
+}
+
+.translate:hover {
+  transform: translateX(50px);
+}
+
+.caja.rotate {
+  transform-origin: top left;
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+/* Tipo de aceleración
+linear
+ease
+ease-in
+ease-out
+cubic-bezier (Vimos desde el chrome)
+*/
+
+.circulo {
+  transition: border-radius 4s linear, background-color 2s ease;
+  /*(Podemos alterar la aceleración desde el navegador y copiar la curva que armamos). */
+  /* transition: border-radius 2s cubic-bezier(0.78, 1.1, 0, 0.83); */
+}
+
+.circulo:hover {
+  /* En una caja con dimensiones cuadradas, el border radius de 50% hace que la misma se vea circular. */
+  border-radius: 50%;
+  background-color: cornflowerblue;
+}
