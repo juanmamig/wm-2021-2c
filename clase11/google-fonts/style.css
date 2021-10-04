@@ -1,3 +1,6 @@
+/* Integramos la tipografía mediante el import O mediante el link. Utilizamos solamente uno de estos métodos, no ambos. */
+/* @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap'); */
+
 h1 {
   font-family: 'Raleway', sans-serif;
 }
@@ -12,3 +15,5 @@ p {
 
 
 2. Google Fonts nos da una herramienta para saber con qué tipografías matchea bien la que hemos seleccionado. */
+
+

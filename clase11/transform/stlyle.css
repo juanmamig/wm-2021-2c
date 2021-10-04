@@ -16,7 +16,7 @@ body {
   height: 100px;
   background-color: coral;
   /* El cambio que genera el transform es muy brusco, por lo cuál vamos a agregarle una transition para lograr que este cambio sea progresivo. */
-  transition: transform 5s ease;
+  transition: transform 2s ease;
   /* El transition acepta 3 valores:
     1. La propiedad que altera a mi elemento
     2. La cantidad de tiempo en transicionar

@@ -1,0 +1,43 @@
+  *{
+      box-sizing: border-box;
+  }
+  
+  
+  .contact-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 600px;
+    padding: 40px;
+    background-color: cadetblue;
+    transition: transform 200ms cubic-bezier(.58,.01,.42,.99);
+    transform: translateX(0);
+    
+  }
+  
+  .off{
+      transform: translateX(100%);
+  }
+
+   
+  
+  .block{
+      display: block;
+      width: 100%;
+
+  }
+
+  .formulario input, .formulario textarea{
+    margin: 10px auto;
+
+  }
+
+  .formulario{
+      padding: 20px;
+      background-color: coral;
+  }
+
+  .cerrar{
+      text-align: right;
+  }
