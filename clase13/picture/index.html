@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- La etiqueta picture se utiliza cuando tenemos que usar más de una imagen en nuestros diseños -->
+<!-- 
+  Necestamos:
+  1. Una etiqueta Picture
+  2. Al menos UNA etiqueta
+  3. Una etiqueta img que utilizará alguna de las sources -->
+  <picture>
+    <source
+      media="(min-width: 992px)"
+      srcset="image-large.png"
+    >
+    <source
+      media="(min-width: 768px)"
+      srcset="image-medium.png"
+    >
+    <source
+      srcset="image-small.png"
+    >
+    <img src="image-small.png" alt="Perritos">
+  </picture>
+  
+</body>
+</html>

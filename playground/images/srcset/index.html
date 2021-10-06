@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    A tener en cuenta:
+    No todos los navegadores son compatibles con srcset 
+
+    Los pixeles no son los mismos en los distintos dispositivos.
+    Lo que usamos nosotros son pixeles CSS
+
+    Cuando decimos width="1000px" no son 1000 pixeles reales.
+    1 Pixel = Una lamparita RGB que tiene la pc.
+    Apple creó retina display => 1 pixel se compone por 4 putnos.
+
+    El pixel en CSS puede ser de 1x1, de 2x2 y de 3x3
+  -->
+  <img
+    src="gato-1x.png"
+    srcset="gato-1x.png, 
+            gato-2x.png 2x, 
+            gato-3x.png 3x"
+    alt="">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Evalua una por una, si cumple, hace un load de la imagen. Si no cumple ninguna, va al fallback del img -->
+
+  <!-- El srcset termina siendo reemplazado en el src del img -->
+  <picture>
+    <source 
+      media="(min-width: 992px)"
+      srcset="image-large.png">
+    <source
+      media="(min-width: 768px)"
+      srcset="image-medium.png">
+    <source
+      srcset="image-small.png">
+    <img src="image-large.png" alt="">
+  </picture>
+</body>
+</html>

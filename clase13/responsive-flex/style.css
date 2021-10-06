@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+nav {
+  background-color: royalblue;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav-ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-ul li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  /* margin: 20px; */
+  padding: 10px;
+}
+
+/* Cards */
+
+.cards-container {
+  border: 1px solid black;
+  /* Se le aplica a un parent y afecta a sus childs DIRECTOS */
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /*justify-content: flex-end;*/ /* Alineo sobre el eje x, hacia el final del contenedor */
+  /* justify-content: center; */
+  justify-content: space-between;
+}
+
+.card {
+  width: 340px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 30px 30px 0 0;
+  background-color: #FBFBFB;
+  box-shadow: 1px 1px 4px 2px rgba(0,0,0,.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-img {
+  max-width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.card-button {
+  display: inline-block; /* Mix entre bloque y linea. Le da bola a los márgenes si es una etiqueta de línea */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.bg-green {
+  background-color: #549E6D;
+}
+
+.centrado {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+
+/* Flex tiene la posibilidad de cambiar la dirección de sus elementos */
+@media(max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Cuando tenemos un contenedor flex y su flex direction es row o row-reverse, vamos a decir que la propiedad justify-content crentra a los childs en el eje X
+
+Si el flex-direction es column, la propiedad justify-content centra a los childs en el eje Y.
+
+
+Cuando tenemos un contenedor flex y su flex direction es row o row-reverse, vamos a decir que la propiedad align-items crentra a los childs en el eje Y
+
+Si el flex-direction es column, la propiedad align-items centra a los childs en el eje X.
+
+Si flex-direction = row => align-items centra arriba y abajo
+Si flex-direction = column => align-items centra izquierda o derecha
+
+Si flex-direction = row => justify-content centra izquieda o derecha
+Si flex-direction = column => justify-content centra arriba o abajo */
