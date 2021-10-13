@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whastapp-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-auto-rows:minmax(100vh, auto);
+}
+
+.whastapp-header {
+  background-color: #2B2F32;
+}
+
+.whatsapp-left-form-search {
+  width: 100%;
+}
+
+.whatsapp-right-chatbox input {
+  width: 100%;
+}
+
+.whatsapp-right {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.whatsapp-left {
+  display: grid;
+  grid-template-rows: 50px 50px 1fr;
+}
+
+.whatsapp-right-chatbox {
+  align-self: end;
+}
