@@ -5,3 +5,22 @@
 body {
   margin: 0;
 }
+
+.modal {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0, .1);
+}
+
+.modal-content {
+  padding: 15px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+}
