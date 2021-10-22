@@ -1,0 +1,8 @@
+.carousel {
+  border: 1px solid black;
+}
+
+.container-700 {
+  max-width: 700px;
+  margin: 0 auto;
+}

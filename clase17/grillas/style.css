@@ -1,0 +1,20 @@
+.custom-col {
+  border: 1px black solid;
+}
+
+.custom-card {
+  text-align: center;
+}
+
+.custom-card > img {
+  width: 80px;
+}
+
+.custom-card > h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.custom-card > p {
+  font-size: 16px;
+}

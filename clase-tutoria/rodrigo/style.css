@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 150px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: blueviolet;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}

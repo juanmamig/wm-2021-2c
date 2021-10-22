@@ -1,0 +1,8 @@
+.custom-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.custom-container-flex {
+  display: flex;
+}
