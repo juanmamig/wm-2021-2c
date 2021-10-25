@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 100px 0;
+  background-image: url('https://images.pexels.com/photos/586744/pexels-photo-586744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+}
+
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 26px;
+  line-height: 36px;
+}

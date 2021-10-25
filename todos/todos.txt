@@ -1,5 +1,7 @@
 1. El hover (Ivan)
 2. Menus desplegables (Iván)
 3. Selección con fotos. (María)
-4. Modal (Agustín)
-5. Carrousel ( Bootstrap )
+
+
+4. Modal - Listo (Agustín)
+5. Carrousel - Listo ( Bootstrap )

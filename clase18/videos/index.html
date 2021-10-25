@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video</title>
+
+  <style>
+    video {
+      display: block;
+      width: 500px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Esto no es lo mejor porque supone que todos los navegadores reproducen mp4. Los navegadores principales hoy SÍ reproducen .mp4 por lo cuál esta opción es viable. -->
+  <video src="hand-video.mp4" controls autoplay muted></video>
+
+  <!-- Si queremos tener más de un formato para asegurar compatibilidad, podemos utilizar la siguiente opción -->
+
+  <video controls autoplay>
+    <source src="hand-video.mp4" type="video/mp4">
+    <source src="hand-video.ogg" type="video/ogg">
+    Tu navegador no soporta videos
+  </video>
+
+  
+</body>
+</html>

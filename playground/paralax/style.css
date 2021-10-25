@@ -1,0 +1,41 @@
+header {
+  background-image: url('https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  padding: 180px 0;
+  color: white;
+}
+
+.banner {
+  background-image: url('https://www.esteticamedicapoyato.com/wp/wp-content/uploads/808483-free-blue-background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.banner2 {
+  background-image: url('https://img.icons8.com/emoji/256/red-circle-emoji.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+p {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 500px;
+  margin: 0 auto;
+}
