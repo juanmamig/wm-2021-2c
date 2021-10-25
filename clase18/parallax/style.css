@@ -27,3 +27,17 @@ p {
   font-size: 26px;
   line-height: 36px;
 }
+
+.banner {
+  padding: 80px 0;
+  background-image: url('https://ak.picdn.net/shutterstock/videos/12756497/thumb/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner h3 {
+  text-align: center;
+  color: white;
+}
