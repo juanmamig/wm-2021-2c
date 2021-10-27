@@ -1,0 +1,21 @@
+.cuerpo-nave {
+  fill: indigo;
+}
+
+svg * {
+  transform-box: fill-box;
+}
+
+svg:hover .cuerpo-nave {
+  fill:lightcoral;
+}
+
+.ventana {
+  transform-origin: center;
+}
+
+
+svg:hover .ventana {
+  transform: rotate(360deg);
+  transition: transform 2s ease;
+}

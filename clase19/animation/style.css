@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  border: 2px solid cornflowerblue;
+  /* animation-name: circulo;
+  animation-duration: 2s; */
+
+  /*Fill Mode: Define como ejecutar la animación.
+  - Forwards la ejecuta, pero se queda en el último frame */
+  /* animation-fill-mode: both; */
+  /* animation-iteration-count: infinite; */
+  /* animation-delay: 2s; */
+  /* animation-direction: alternate;
+  animation-timing-function: ease; 
+  */
+
+  animation: alternate circulo infinite 2s 3s;
+}
+
+/* Definiendo animaciones:
+1. Uso la palabra keyframes
+2. Especifico de donde salgo y hacia donde voy
+3. En cada momento, agrego las propiedades a cambiar.
+4. Agrego la animación al elemento a ser animado
+
+Tip: Siempre setear las condiciones iniciales y finales */
+@keyframes circulo {
+  from {
+    border-radius: 0px;
+  }
+
+  to {
+    border-radius: 50%;
+  }
+}
+
+
+
