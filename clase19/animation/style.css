@@ -40,4 +40,31 @@ Tip: Siempre setear las condiciones iniciales y finales */
 }
 
 
+#m1,#m2,#m3,#m4,#m5,#m6,#m7,#m8 {
+  animation: caer 1s ease-in infinite;
+}
 
+#m1 {
+  animation-delay: 100ms;
+}
+#m2 {
+  animation-delay: 200ms;
+}
+#m3 {
+  animation-delay: 300ms;
+}
+#m4 {
+  animation-delay: 400ms;
+}
+
+
+
+@keyframes caer {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
