@@ -51,7 +51,6 @@ button = document.querySelector('button');
 // });
 
 
-
 // AGREGAR O QUITAR CLASES
 
 let h2 = document.querySelector('h2');
