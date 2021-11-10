@@ -49,3 +49,4 @@ console.log("El elemento eliminado es: ", eliminado2);
 const indice = edades.indexOf(39);
 console.log(edades);
 console.log("El índice de 39 es: ", indice);
+00

@@ -1,0 +1,7 @@
+1. Menus desplegables (Iván)
+2. Medidas
+3. Selección con fotos. (María)
+  - De la mano con :active
+  - Custom select
+4. Delegación de dominio
+
