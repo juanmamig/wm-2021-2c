@@ -1,0 +1,5 @@
+1. Solución ejercicios
+2. While
+3. Debugger
+4. Objetos
+5. Funciones

@@ -1,0 +1,32 @@
+// ARQUITECTURA
+1. Creo un nav
+2. Creo los ul con sus li
+3. Dentro de un li específico, creo el submenu (que es otro ul)
+4. Dentro del li que va a contener el submenu, podemos tener un <a> o un button.
+
+// ESTILO
+5. Damos estilo y posicionamos el submenu de manera absoluta con un top:100% en relación a su parent.
+
+// ESCONDER Y MOSTRAR
+6. Vamos a utilizar la propiedad de visibility: hidden para esconder el submenu, y lo vamos a mostrar en el hover del parent.
+
+.nav-submenu-container:hover .nav-submenu{
+  visibility: visible;
+}
+
+// FOCUS
+
+Los <li> no son elementos que tengan foco, a diferencia de los inputs o los <a>. Con el tab, lo que podemos hacer es ir navegando la web con los elementos que tienen foco.
+
+¿Qué es lo que queremos?
+Que cuando se haga foco en uno de los top links, se muestre el submenu. Para eso vamos a escuchar el foco en los links, y darle una clase "focus" a su parent que, para el submenu, va a ser un <li>.
+
+Entonces lo que hacemos es:
+1. Seleccionamos los top-links (los principales)
+2. Una vez que reciben foco, le agregamos la clase "focus" a los parents (los li)
+3. Damos una regla CSS para mostrar el submenu cuando tenga la clase focus
+
+
+// BLUR
+
+Si el <a> que tiene focus, tiene un hermano, lo que hago es seleccionar todos los hermanos de ese submenu, y cuando le saco foco al último, saco la clase focus del parent.
