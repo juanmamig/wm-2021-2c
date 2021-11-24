@@ -19,7 +19,6 @@ persona.nombre = "Sofía";
 persona["edad"] = 40;
 console.log(persona.nombre);  // Sofía
 
-
 for (let propiedad in persona) {
   console.log(`Propiedad: ${propiedad}`);
   console.log(`Valor: ${persona[propiedad]}`);

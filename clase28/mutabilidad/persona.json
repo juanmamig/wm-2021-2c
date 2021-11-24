@@ -1,0 +1,9 @@
+{
+  "nombre": "Juan",
+  "apellido": "Perez",
+  "mascota": {
+    "nombre": "Titán",
+    "especie": "Perro",
+    "raza": "Labrador"
+  }
+}
