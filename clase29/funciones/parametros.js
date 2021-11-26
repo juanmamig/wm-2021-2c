@@ -21,7 +21,6 @@
 
 // saludo("  ");
 
-
 // function suma(num1, num2) {
 //   console.log(num1 + num2);
 // }
@@ -81,7 +80,7 @@ function total(arreglo = []){
   }
 }
 
-
+total();
 total(undefined);
 total(sueldosArr2020);
 total(sueldosArr2021);
