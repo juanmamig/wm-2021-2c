@@ -17,6 +17,6 @@
 // }
 
 // Si no tiene {} y está en una sola línea, el return está implícito.
-const suma = (a,b) => a + b;
+// const suma = (a,b) => a + b;
 
-console.log(suma(4,4))
+// console.log(suma(4,4))

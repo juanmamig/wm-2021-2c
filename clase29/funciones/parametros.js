@@ -1,6 +1,8 @@
 // // La función puede recibir "data", o parámetros.
 
-// // Opción 1 => Validación
+import { filterNumberArray } from '../utils';
+
+// Opción 1 => Validación
 // function saludo(nombre = "Usuario") {
 //   if (typeof nombre === "string" && nombre.trim() != "") {
 //     console.log(`Hola ${nombre}`);
@@ -8,6 +10,8 @@
 //     console.log("El dato ingresado no es correcto");
 //   }
 // }
+
+// saludo();
 
 // saludo("Juan");
 // saludo("Sofía");
@@ -21,16 +25,16 @@
 
 // saludo("  ");
 
-// function suma(num1, num2) {
-//   console.log(num1 + num2);
-// }
+function suma(num1, num2) {
+  console.log(num1 + num2);
+}
 
 // suma(1, 5); // 6
 // suma(1, "5"); // "15"
 // suma(1, true); // 2
 // suma(1, false); // 1
-// suma(1, NaN); // 
-// suma(1); // 1
+// suma(1, NaN); // NaN
+// suma(1); // NaN
 
 // 1. Dado un objeto con sueldo, crear una función llamada total que reciba un array de sueldos y imprima el total. Debe validar su función.
 
@@ -65,24 +69,28 @@ const sueldos = {
   }
 }
 
-const sueldosArr2020 = Object.values(sueldos["2020"]); // [56000, 58000, ...];
-const sueldosArr2021 = Object.values(sueldos["2021"]); // [56000, 58000, ...];
+// const sueldosArr2020 = Object.values(sueldos["2020"]); // [56000, 58000, ...];
+// const sueldosArr2021 = Object.values(sueldos["2021"]); // [56000, 58000, ...];
 
-function total(arreglo = []){
-  if(Array.isArray(arreglo) && arreglo.length > 0) {
-    let sumaTotal = 0;
-    for(let i = 0; i < arreglo.length; i++) {
-        sumaTotal += arreglo[i];
-    }
-    console.log(sumaTotal);
-  } else {
-    console.error("No sea gil, ingrese un array");
-  }
-}
+// function total(arreglo = []){
+//   if(Array.isArray(arreglo) && arreglo.length > 0) {
+//     let sumaTotal = 0;
+//     for(let i = 0; i < arreglo.length; i++) {
+//         sumaTotal += arreglo[i];
+//     }
+//     console.log(sumaTotal);
+//   } else {
+//     console.error("No sea gil, ingrese un array o que su array no esté vacío");
+//   }
+// }
 
-total();
-total(undefined);
-total(sueldosArr2020);
-total(sueldosArr2021);
-total(NaN);
-total(parser([]));
+// total();
+// total(undefined);
+// total(sueldosArr2020);
+// total(sueldosArr2021);
+// total(NaN);
+
+
+
+total(filterNumberArray(sueldosArr));
+
