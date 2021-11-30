@@ -5,7 +5,7 @@ const nombres = ["Juan", "Sofía", "Mariela"];
 // 3. Dentro del callback seteo la lógica de filtros y devuelvo lo que necesite guardar en el array
 const nombresCortos = nombres.filter(function(elemento){
   return elemento.length <= 5;
-})
+}); // ["Juan", "Sofía"];
 
 console.log(nombresCortos);
 
