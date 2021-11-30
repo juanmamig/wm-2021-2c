@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+body.dark, body.dark a {
+  background-color: black;
+  color: white
+}
+
+body.dark .product {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 25%;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,.1);
+}
