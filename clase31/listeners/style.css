@@ -1,0 +1,7 @@
+body.dark {
+  background-color: black;
+}
+
+body.dark h1 {
+  color: white;
+}
