@@ -18,7 +18,7 @@ if(edad > 18) {
 }
 
 // Se puede redeclarar
-var puedePasar = false;
+// var puedePasar = false;
 
 console.log(puedePasar);
 
@@ -29,8 +29,8 @@ if(edad > 18) {
   const puedePasar3 = true;
 }
 
-// console.log(puedePasar2);
-// console.log(puedePasar3);
+console.log(puedePasar2);
+console.log(puedePasar3);
 
 
 function hello() {

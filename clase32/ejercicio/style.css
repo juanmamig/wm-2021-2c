@@ -1,0 +1,9 @@
+.contenedor-flex{ display: flex; flex-wrap: wrap; }
+
+.product {
+  width: 25%;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,.1);
+}
