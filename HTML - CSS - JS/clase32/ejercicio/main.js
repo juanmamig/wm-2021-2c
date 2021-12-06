@@ -14,8 +14,12 @@ const producto = [
   {
     nombre: 'Cinturon',
     precio: 1001
+  },
+  {
+    nombre: 'Muñecos',
+    precio: 1001
   }
-]
+];
 
 
 producto.forEach((el) => {
