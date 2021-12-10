@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .modal {
+      opacity: 0;
+      visibility: hidden;
+      width: 600px;
+      padding: 80px 40px;
+      box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+      position: absolute;
+      top: 20%;
+      left: calc(50% - 300px);
+      z-index: 2;
+      background-color: white;
+    }
+
+    .modal.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .fondo-negro {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .fondo-negro.visible {
+      visibility: visible;
+      background-color: rgba(0,0,0,.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product" data-id="1">
+    Mesa
+  </div>
+  <div class="product" data-id="2">
+    Silla
+  </div>
+  
+
+  <div class="modal">
+    <div class="modal-title"></div>
+    <div class="modal-description"></div>
+  </div>
+
+  <div class="fondo-negro"></div>
+
+  <script>
+
+    // Lleno de info el modal
+    
+    const modal = document.querySelector('.modal');
+    const modalTitle = document.querySelector('.modal-title');
+    const modalDescripton = document.querySelector('.modal-description');
+
+    const mostrarModal = (dataId, text) => {
+      modal.classList.add('visible');
+      modalTitle.textContent = text;
+    }
+
+    // Muestro el fondo negro
+    const fondoNegro = document.querySelector('.fondo-negro');
+    const mostarFondo = () => {
+      fondoNegro.classList.add('visible');
+    }
+
+    // Si hago click en fondo negro, cierro el modal.
+    fondoNegro.addEventListener('click', () => {
+      modal.classList.remove('visible');
+      fondoNegro.classList.remove('visible');
+    });
+
+    // Primero Selecciono elementos y les doy el click
+    const products = document.querySelectorAll('.product');
+    for(let product of products) {
+      product.addEventListener('click', (e) => {
+        const dataId = e.currentTarget.dataset.id;
+        const text = e.currentTarget.textContent;
+        mostarFondo();
+        mostrarModal(dataId, text);
+      });
+    }
+
+  </script>
+
+</body>
+</html>
