@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const product = require('./utils/products');
 const products = require('./utils/products');
 
 const app = express();
@@ -14,10 +15,13 @@ app.set('view engine', 'ejs');
 const publicURL = path.join(__dirname, 'public');
 app.use(express.static(publicURL));
 
-app.get('', (req, res) => {
-  res.render('index', {
-    products
+app.get('', (req, res) => { 
+  product.getAllProducts((bodyRecibido) => {
+    res.render('index', {
+      products: JSON.parse(bodyRecibido)
+    });
   });
+  
 });
 
 app.get('/contacto', (req, res) => {

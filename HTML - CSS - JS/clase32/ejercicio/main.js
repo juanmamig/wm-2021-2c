@@ -18,9 +18,24 @@ const producto = [
   {
     nombre: 'Muñecos',
     precio: 1001
+  },
+  {
+    nombre: 'Muñecos',
+    precio: 1001
+  },
+  {
+    nombre: 'Muñecos',
+    precio: 1001
+  },
+  {
+    nombre: 'Muñecos',
+    precio: 1001
+  },
+  {
+    nombre: 'Muñecos',
+    precio: 1001
   }
 ];
-
 
 producto.forEach((el) => {
   const div = document.createElement('div');
