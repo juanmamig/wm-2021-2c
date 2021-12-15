@@ -21,8 +21,31 @@ app.get('', (req, res) => {
       products: JSON.parse(bodyRecibido)
     });
   });
+});
+
+// Lo que sea que me mande el cliente después de detalle/, lo voy a guardar en una variable llamada id. Es decir:
+
+//Si cliente escribe http://misitio.com/detalle/10, id = 10;
+//Si cliente escribe http://misitio.com/detalle/hola, id = hola;
+
+app.get('/detalle/:id', (req, res) => {
+  // const params = req.params.id;
+  const { params } = req;
+  const { id } = params;
+
+  product.getDetalle(id, (bodyRecibido) => {
+    res.render('pages/detalle', {
+      product: JSON.parse(bodyRecibido)
+    });
+  });
+
+  // Traigas la información de ese producto.
+  // ¿ Y cómo hago eso?
+  // Hay un servicio que se llama https://jsonplaceholder.typicode.com/posts/10 que si le mandás el número de id al final, te devuelve un json con la información del producto. Esto es una consluta http.
+
   
 });
+
 
 app.get('/contacto', (req, res) => {
   res.render('pages/contacto');

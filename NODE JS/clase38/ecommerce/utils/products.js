@@ -7,4 +7,10 @@ const getAllProducts = (callback) => {
   });
 }
 
-module.exports = { getAllProducts }
+const getDetalle = (id, callback) => {
+  request(`${url}/${id}`, (err, res, body) => {
+    callback(body);
+  })
+}
+
+module.exports = { getAllProducts, getDetalle }
