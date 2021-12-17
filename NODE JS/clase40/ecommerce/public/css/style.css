@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.product {
+  padding: 20px;
+  display: block;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+}
+
+.product h2 {
+  font-size: 18px;
+}
+
+.product img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  max-height: 120px;
+}
