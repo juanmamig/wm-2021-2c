@@ -42,9 +42,11 @@ app.get('/detalle/:id', (req, res) => {
   // Traigas la información de ese producto.
   // ¿ Y cómo hago eso?
   // Hay un servicio que se llama https://jsonplaceholder.typicode.com/posts/10 que si le mandás el número de id al final, te devuelve un json con la información del producto. Esto es una consluta http.
-
-  
 });
+
+app.get('/api', (req, res) => {
+  res.json([{id: 1}, {id: 2}]);
+})
 
 
 app.get('/contacto', (req, res) => {
