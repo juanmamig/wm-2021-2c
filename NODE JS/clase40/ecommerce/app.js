@@ -9,6 +9,8 @@ const viewsURL = path.join(__dirname, 'views');
 app.set('views', viewsURL);
 app.set('view engine', 'ejs');
 
+app.use(express.json());
+
 const publicURL = path.join(__dirname, 'public');
 app.use(express.static(publicURL));
 
@@ -31,6 +33,17 @@ app.get('/detalle/:id', (req, res) => {
     })
   })
 })
+
+app.get('/contacto', (req, res) => {
+  res.render('pages/contacto');
+})
+
+app.post('/consulta', (req, res) => {
+  const dataCliente = req.body;
+  console.log(dataCliente);
+  // enviarMail(dataCliente)
+  // agregarALaBase(dataCliente)
+});
 
 app.listen(port, () => {
   console.log('Escuchando en el puerto' + port);
