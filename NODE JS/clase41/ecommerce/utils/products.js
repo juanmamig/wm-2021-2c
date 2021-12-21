@@ -11,7 +11,7 @@ const getAllProducts = (callback) => {
     if(err) {
       return callback(err, undefined);
     }
-
+    
     // Si hay un error nuestro, de tipeo. Sabemos que la response va a tener un 404
     if(res.statusCode === 404) {
       return callback("Not Found", undefined);
