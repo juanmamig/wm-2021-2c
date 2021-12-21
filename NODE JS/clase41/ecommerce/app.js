@@ -1,4 +1,5 @@
 const express = require('express');
+const { userInfo } = require('os');
 const path = require('path');
 const productsModule = require('./utils/products');
 
@@ -15,8 +16,14 @@ const publicURL = path.join(__dirname, 'public');
 app.use(express.static(publicURL));
 
 app.get('', (req, res) => {
-  productsModule.getAllProducts((products) => {
-    res.render('index', {
+  productsModule.getAllProducts((error, products) => {
+    if (error) {
+      return res
+      .status(`404`)
+      .send(error);
+    }
+
+    return res.render('index', {
       products
     })
   });
@@ -25,10 +32,13 @@ app.get('', (req, res) => {
 app.get('/detalle/:id', (req, res) => {
   // Traer el id que manda el cliente y está disponible en el objeto params.
   const id = req.params.id;
-  productsModule.getSingleProduct(id, (product) => {
+  productsModule.getSingleProduct(id, (error, product) => {
+    if(error) {
+      return res.send(error);
+    }
+    
     // Renderizo Página de detalle
-    console.log(product);
-    res.render('pages/detalle', {
+    return res.render('pages/detalle', {
       product
     })
   })
@@ -40,12 +50,17 @@ app.get('/contacto', (req, res) => {
 
 app.post('/consulta', (req, res) => {
   const dataCliente = req.body;
-  console.log(dataCliente);
-  // enviarMail(dataCliente)
-  // agregarALaBase(dataCliente)
+  res.send({message: "Consulta enviada", dataCliente });
+  // enviarMail(dataCliente) (Puede ser exitoso o no)
+  // agregarALaBase(dataCliente) (Puede ser exitoso o no)
 });
 
-
+app.get('/queryTest', (req, res) => {
+  // const query = req.query;
+  const { query } = req;
+  // Recibimos variables mediante query params y podemos hacer filtros o lo que necesitemos
+  res.send(query);
+})
 
 app.listen(port, () => {
   console.log('Escuchando en el puerto' + port);
