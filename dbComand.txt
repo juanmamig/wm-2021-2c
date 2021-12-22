@@ -1,0 +1,1 @@
+/Users/juanmamig/mongodb/bin/mongod --dbpath=/Users/juanmamig/mongodb-data
