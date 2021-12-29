@@ -12,6 +12,7 @@ app.use(cors())
 const productRouter = require('./routers/products')
 app.use(productRouter)
 
+
 app.listen(port, ()=>{
     console.log(`Escuchando el puerto ${port}`)
 })

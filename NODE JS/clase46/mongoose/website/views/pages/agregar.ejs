@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+              <a class="nav-link active" aria-current="page" href="/">Página Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/agregar">Agregar Productos</a>
+              <a class="nav-link" href="#">Agregar Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Eliminar Productos</a>
@@ -37,19 +37,27 @@
 
   <div class="container">
     <div class="row my-5">
-      <% products.forEach((product) => { %>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://sslimages.shoppersstop.com/sys-master/images/ha3/h2c/16221952344094/S21710BTEE055_YELLOW.jpg_2000Wx3000H" class="card-img-top" alt="T-Shirt">
-            <div class="card-body">
-              <h5 class="card-title"><%= product.name %></h5>
-              <p class="card-text"><%= product.precio %></p>
-              <a href="#" class="btn btn-primary">Ver Producto</a>
-            </div>
-          </div>
-        </div>
-      <% }) %>
+      <h2>Agregar Productos</h2>
     </div>
+    <form>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nombre de Producto</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese un producto" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Ingrese una descripción</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Descripción del producto" name="description">
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Ingrese el precio</label>
+        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Precio del producto" name="price">
+      </div>
+
+      <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="Cargar Producto">
+      </div>
+    </form>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

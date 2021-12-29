@@ -1,0 +1,1 @@
+console.log("Products desde el modal", products);

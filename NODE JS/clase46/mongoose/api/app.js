@@ -1,4 +1,6 @@
 const express = require('express')
+require('./db/mongoose')
+
 const router = express.Router()
 const cors = require('cors')
 const port = 3001

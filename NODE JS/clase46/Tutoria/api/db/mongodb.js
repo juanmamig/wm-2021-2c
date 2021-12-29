@@ -9,6 +9,8 @@ function getClient (callback){
         if(err) callback(err, undefined)
         console.log('Conectado a la DB')
         const db = client.db('newecommerce')
+        
+    
         return callback(undefined, db)
     })
     
