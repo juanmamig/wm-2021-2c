@@ -16,8 +16,6 @@ const router = express.Router()
 // })
 
 router.post('/product', (req, res) => {
-    console.log(req.body)
-
     const product = new Product(req.body);
     product.save()
         .then(() => {
@@ -26,17 +24,7 @@ router.post('/product', (req, res) => {
         .catch((err) => {
             res.status(500).send(err);
         });
-
-    // const ar = []
-    // ar.push(req.body)
-    // getClient((err, db) => {
-    //     if(err) return res.send(err)
-    //     db.collection('products').insertMany(ar, (err, result) => {
-    //     if(err) return res.send(err)
-    //     return res.send(result)
-        // }) 
-    // })
-})
+});
 
 // router.get('/product/:id', (req, res) => {
 //     const { id } = req.params;
