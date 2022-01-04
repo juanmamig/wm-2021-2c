@@ -53,4 +53,3 @@ allLi.forEach((el) => {
 // Paso 3: De alguna manera tengo que enviar el id del producto para filtrarlos, al momento que hago click.
 
 // Paso 4: Pasarle al modal la info.
-
